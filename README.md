@@ -1,56 +1,52 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Description the project.
+> Math MAgicians is a website for all fans of mathematics that allows users to make simple calculations and read a random math related quote.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Languages: HTML, CSS, JsvaScript
+- Frameworks: React
+- Technologies: Linters, Git, GitHub, Jest. 
 
 ## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+### soon
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+* node package manager – to be able to install packages locally.
+* A github Account – to be able to use github actions.
+
+
 ### Setup
+* Open the terminal
+* Run ```cd \path\to\where\you\want\your\local\copy```
+* Clone the repo
+  * Run ```git clone https://github.com/Trictonicmp/js-capstone-project.git```
+  * Run ```cd js-capstone-project```
+* Install dependencies  
+  * Run ```npm install```
 
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+### Build
+Run ```npm run build```
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Amaury Permer**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@trictonicmp](https://github.com/trictonicmp)
+- Twitter: [@AmauryPermer](https://twitter.com/AmauryPermer)
+- LinkedIn: [@amaury-permer](https://www.linkedin.com/in/amaury-permer/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 

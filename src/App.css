@@ -1,0 +1,68 @@
+@import url(reset.css);
+
+.App {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.calculator {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 1em;
+  background-color: #858694;
+  text-align: right;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.calculator input:hover {
+  outline: 2px solid #cacad4;
+}
+
+.calculator .buttons-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator .buttons-container .calc-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  background-color: #e0e0e0;
+  outline: 1px solid #d1d1d1;
+}
+
+.calculator .buttons-container .calc-button:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.calculator .buttons-container .calc-button:active {
+  background-color: #c6c6c6;
+}
+
+.calculator .buttons-container .calc-button:nth-child(4n) {
+  background-color: #f5913e;
+}
+
+.calculator .buttons-container .calc-button:nth-child(4n):hover {
+  background-color: #ffa358;
+}
+
+.calculator .buttons-container .calc-button:nth-child(4n):active {
+  background-color: #f38b36;
+}

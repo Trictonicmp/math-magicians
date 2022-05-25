@@ -55,14 +55,18 @@
   background-color: #c6c6c6;
 }
 
-.calculator .buttons-container .calc-button:nth-child(4n) {
+.calculator .buttons-container .action-btn {
   background-color: #f5913e;
 }
 
-.calculator .buttons-container .calc-button:nth-child(4n):hover {
+.calculator .buttons-container .action-btn:hover {
   background-color: #ffa358;
 }
 
-.calculator .buttons-container .calc-button:nth-child(4n):active {
+.calculator .buttons-container .action-btn:active {
   background-color: #f38b36;
+}
+
+.calculator .buttons-container .double-btn {
+  grid-column: span 2;
 }

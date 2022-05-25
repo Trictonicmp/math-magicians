@@ -1,50 +1,62 @@
 import React from 'react';
 import CalcButton from './CalcButton';
-import operate from '../logic/operate';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends React.Component {
   constructor() {
     super();
     this.state = {
-      total: '',
-      next: '',
-      operation: '',
+      total: 0,
+      next: null,
+      operation: null,
     };
-    this.handleButton = this.handleButton.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleButton = (buttonValue) => {
-    console.log(buttonValue);
+  componentDidMount() {
+    this.setState({ total: 0 });
+  }
+
+  componentDidUpdate() {
+    const { total, next } = this.state;
+    if (total === null && next === null) {
+      this.setState({ total: 0 });
+    }
+  }
+
+  handleButtonClick = (buttonValue) => {
+    const newState = calculate(this.state, buttonValue);
+    this.setState(newState);
   }
 
   render() {
-    const { inputValue } = this.state;
+    const { total, operation, next } = this.state;
     return (
       <div className="calculator">
         <input
           type="text"
-          value={inputValue}
+          value={total + operation + next}
         />
         <div className="buttons-container">
-          <CalcButton value="AC" clickFn={this.handleButton} />
-          <CalcButton value="+/-" clickFn={this.handleButton} />
-          <CalcButton value="%" clickFn={this.handleButton} />
-          <CalcButton value="÷" buttonType="action-btn" clickFn={this.handleButton} />
-          <CalcButton value="7" clickFn={this.handleButton} />
-          <CalcButton value="8" clickFn={this.handleButton} />
-          <CalcButton value="9" clickFn={this.handleButton} />
-          <CalcButton value="x" buttonType="action-btn" clickFn={this.handleButton} />
-          <CalcButton value="4" clickFn={this.handleButton} />
-          <CalcButton value="5" clickFn={this.handleButton} />
-          <CalcButton value="6" clickFn={this.handleButton} />
-          <CalcButton value="-" buttonType="action-btn" clickFn={this.handleButton} />
-          <CalcButton value="1" clickFn={this.handleButton} />
-          <CalcButton value="2" clickFn={this.handleButton} />
-          <CalcButton value="3" clickFn={this.handleButton} />
-          <CalcButton value="+" buttonType="action-btn" clickFn={this.handleButton} />
-          <CalcButton value="0" buttonType="double-btn" clickFn={this.handleButton} />
-          <CalcButton value="." clickFn={this.handleButton} />
-          <CalcButton value="=" buttonType="action-btn" clickFn={this.handleButton} />
+          <CalcButton value="AC" clickFn={this.handleButtonClick} />
+          <CalcButton value="+/-" clickFn={this.handleButtonClick} />
+          <CalcButton value="%" clickFn={this.handleButtonClick} />
+          <CalcButton value="÷" buttonType="action-btn" clickFn={this.handleButtonClick} />
+          <CalcButton value="7" clickFn={this.handleButtonClick} />
+          <CalcButton value="8" clickFn={this.handleButtonClick} />
+          <CalcButton value="9" clickFn={this.handleButtonClick} />
+          <CalcButton value="x" buttonType="action-btn" clickFn={this.handleButtonClick} />
+          <CalcButton value="4" clickFn={this.handleButtonClick} />
+          <CalcButton value="5" clickFn={this.handleButtonClick} />
+          <CalcButton value="6" clickFn={this.handleButtonClick} />
+          <CalcButton value="-" buttonType="action-btn" clickFn={this.handleButtonClick} />
+          <CalcButton value="1" clickFn={this.handleButtonClick} />
+          <CalcButton value="2" clickFn={this.handleButtonClick} />
+          <CalcButton value="3" clickFn={this.handleButtonClick} />
+          <CalcButton value="+" buttonType="action-btn" clickFn={this.handleButtonClick} />
+          <CalcButton value="0" buttonType="double-btn" clickFn={this.handleButtonClick} />
+          <CalcButton value="." clickFn={this.handleButtonClick} />
+          <CalcButton value="=" buttonType="action-btn" clickFn={this.handleButtonClick} />
         </div>
       </div>
     );

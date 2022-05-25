@@ -1,11 +1,14 @@
 import React from 'react';
 import CalcButton from './CalcButton';
+import operate from '../logic/operate';
 
 export default class Calculator extends React.Component {
   constructor() {
     super();
     this.state = {
-      inputValue: '0',
+      total: '',
+      next: '',
+      operation: '',
     };
     this.handleButton = this.handleButton.bind(this);
   }

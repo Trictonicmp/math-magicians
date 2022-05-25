@@ -15,7 +15,7 @@
   flex-wrap: wrap;
 }
 
-.calculator input {
+.calculator .input {
   appearance: textfield;
   width: 100%;
   padding: 1em;

@@ -13,10 +13,6 @@ export default class Calculator extends React.Component {
     this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  componentDidMount() {
-    this.setState({ total: 0 });
-  }
-
   componentDidUpdate() {
     const { total, next } = this.state;
     if (total === null && next === null) {
@@ -33,10 +29,11 @@ export default class Calculator extends React.Component {
     const { total, operation, next } = this.state;
     return (
       <div className="calculator">
-        <input
-          type="text"
-          value={total + operation + next}
-        />
+        <span className="input">
+          { total }
+          { operation }
+          { next }
+        </span>
         <div className="buttons-container">
           <CalcButton value="AC" clickFn={this.handleButtonClick} />
           <CalcButton value="+/-" clickFn={this.handleButtonClick} />

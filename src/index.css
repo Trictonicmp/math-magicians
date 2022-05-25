@@ -16,6 +16,7 @@
 }
 
 .calculator input {
+  appearance: textfield;
   width: 100%;
   padding: 1em;
   background-color: #858694;

@@ -3,14 +3,24 @@ import PropTypes from 'prop-types';
 
 // eslint-disable-next-line react/prefer-stateless-function
 export default class CalcButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    const { clickFn, value } = this.props;
+    clickFn(value);
+  }
+
   render() {
-    const { value, clickFn, buttonType } = this.props;
+    const { value, buttonType } = this.props;
     const classNm = `calc-button ${buttonType}`;
     return (
       <span
         aria-hidden
         className={classNm}
-        onClick={() => clickFn(value)}
+        onClick={this.handleClick}
       >
         {value}
       </span>

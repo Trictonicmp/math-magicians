@@ -1,32 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prefer-stateless-function
-export default class CalcButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    const { clickFn, value } = this.props;
-    clickFn(value);
-  }
-
-  render() {
-    const { value, buttonType } = this.props;
-    const classNm = `calc-button ${buttonType}`;
-    return (
-      <span
-        aria-hidden
-        className={classNm}
-        onClick={this.handleClick}
-      >
-        {value}
-      </span>
-    );
-  }
-}
+const CalcButton = (props) => {
+  const { value, clickFn, buttonType } = props;
+  return (
+    <span
+      aria-hidden
+      className={`calc-button ${buttonType}`}
+      onClick={() => { clickFn(value); }}
+    >
+      {value}
+    </span>
+  );
+};
 
 CalcButton.propTypes = {
   value: PropTypes.string,
@@ -38,3 +24,5 @@ CalcButton.defaultProps = {
   value: '',
   buttonType: '',
 };
+
+export default CalcButton;

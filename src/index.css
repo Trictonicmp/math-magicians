@@ -19,6 +19,7 @@ body {
   padding: 1em;
   background-color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -49,7 +50,10 @@ body {
 }
 
 .navbar ul {
+  flex-grow: 1;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 1em;
 }
 
@@ -72,16 +76,19 @@ body {
   font-size: 2em;
 }
 
-.homepage div {
-  padding: 1em;
-  outline: 1px solid black;
-}
-
 .homepage h1 span {
   padding: 0.1em 0.3em;
   border-radius: 0.2em;
   color: white;
   background-color: black;
+}
+
+.homepage div p {
+  margin-bottom: 1.5em;
+}
+
+.maths-section {
+  width: 100%;
 }
 
 .calculator {

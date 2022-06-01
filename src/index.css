@@ -135,6 +135,7 @@ body {
 .calculator .input {
   appearance: textfield;
   width: 100%;
+  height: 3em;
   padding: 1em;
   background-color: #858694;
   text-align: right;

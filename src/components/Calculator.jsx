@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CalcButton from './CalcButton';
 import calculate from '../logic/calculate';
 
@@ -7,15 +7,6 @@ const Calculator = () => {
     total: 0,
     next: null,
     operation: null,
-  });
-
-  useEffect(() => {
-    if (calculator.total === null) return;
-    setCalculator((prevState) => (
-      {
-        ...prevState,
-        total: 0,
-      }), [calculator]);
   });
 
   const handleButtonClick = (buttonValue) => {

@@ -61,6 +61,29 @@ body {
   text-decoration: underline;
 }
 
+.homepage {
+  width: 100%;
+  padding: 1em;
+  max-width: 50em;
+}
+
+.homepage h1 {
+  margin: 1em 0;
+  font-size: 2em;
+}
+
+.homepage div {
+  padding: 1em;
+  outline: 1px solid black;
+}
+
+.homepage h1 span {
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  color: white;
+  background-color: black;
+}
+
 .calculator {
   width: 100%;
   max-width: 500px;

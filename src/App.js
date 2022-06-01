@@ -1,11 +1,15 @@
 import React from 'react';
 
 import './App.css';
-import Calculator from './components/Calculator';
+// import Calculator from './components/Calculator';
+import Nav from './components/Nav';
+import Home from './pages/Home';
 
 const App = () => (
   <div className="App">
-    <Calculator />
+    <Nav />
+    <Home />
+    {/* <Calculator /> */}
   </div>
 );
 

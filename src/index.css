@@ -1,11 +1,64 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body {
+  font-family: 'Space Mono', sans-serif;
+  background-color: #c8d5df;
+}
 
 .App {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar:hover a span {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar .icon-link {
+  font-size: 1.2em;
+  color: black;
+  font-style: italic;
+}
+
+.navbar span {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  margin-right: -1.6em;
+  transition: margin-right 0.2s ease-out;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1em;
+}
+
+.navbar ul li a {
+  color: black;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 .calculator {
@@ -25,7 +78,6 @@
   outline: none;
   color: white;
   font-size: 1.2em;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .calculator input:hover {

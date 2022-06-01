@@ -1,9 +1,9 @@
 import { render, fireEvent, screen } from '@testing-library/react';
-import { Router, MemoryRouter } from 'react-router';
-import renderer from 'react-test-renderer';
 import { toHaveClass } from '@testing-library/jest-dom';
 import Calculator from './components/Calculator';
-import Nav from './components/Nav';
+import App from './App';
+
+console.log(toHaveClass);
 
 describe('first test', () => {
   test('check that button 8 is clicked and the imput is selected', async () => {
@@ -18,23 +18,19 @@ describe('first test', () => {
 });
 
 describe('Nav menu', () => {
-
-  // it('navigation to calculator', () => {
-  //   const history = createMemoryHistory();
-  //   render(<Nav />);
-  //   fireEvent.click(screen.getByText('Calculator'));
-  //   expect(history.location.pathname).toBe('/maths');
-  // });
-
   it('navigation to quote', () => {
-    const tree = renderer
-    .create(
-      <MemoryRouter>
-        <Nav />
-      </MemoryRouter>,
-    )
-    .toJSON();
+    render(
+      <App />,
+    );
     fireEvent.click(screen.getByText('Quote'));
-    expect('Mathematics is not about numbers, equations, computations, algorithms: it is about understanding.').toBeInTheDocument();
+    expect(screen.getByText('William Paul Thurson')).toBeInTheDocument();
+  });
+
+  it('navigation to maths', () => {
+    render(
+      <App />,
+    );
+    fireEvent.click(screen.getByText('Calculator'));
+    expect(screen.getByText('Let\'s do some math!!')).toBeInTheDocument();
   });
 });

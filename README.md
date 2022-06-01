@@ -2,14 +2,14 @@
 
 # Math Magicians
 
-> Math MAgicians is a website for all fans of mathematics that allows users to make simple calculations and read a random math related quote.
+> Math Magicians is a website for all fans of mathematics that allows users to make simple calculations and read a random math related quote.
 
 
 ## Built With
 
 - Languages: HTML, CSS, JsvaScript
 - Frameworks: React
-- Technologies: Linters, Git, GitHub, Jest. 
+- Technologies: Linters, Git, GitHub. 
 
 ## Live Demo (if available)
 ### soon
@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 * Open the terminal
 * Run ```cd \path\to\where\you\want\your\local\copy```
 * Clone the repo
-  * Run ```git clone https://github.com/Trictonicmp/js-capstone-project.git```
+  * Run ```git clone https://github.com/Trictonicmp/math-magicians.git```
   * Run ```cd js-capstone-project```
 * Install dependencies  
   * Run ```npm install```

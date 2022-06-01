@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Nav = () => (
   <header className="navbar">
     <a href="/" className="icon-link">
@@ -5,9 +7,9 @@ const Nav = () => (
       Magicians
     </a>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/calculator">Calculator</a></li>
-      <li><a href="/quotes">Quote</a></li>
+      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/maths">Calculator</Link></li>
+      <li><Link to="/quote">Quote</Link></li>
     </ul>
   </header>
 );

@@ -13,8 +13,8 @@ import Quote from './pages/Quote';
 
 const App = () => (
   <div className="App">
-    <Nav />
     <Router>
+      <Nav />
       <Routes>
         <Route path="/quote" element={<Quote />} />
         <Route path="/maths" element={<Maths />} />

@@ -1,6 +1,163 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Footer renders correctly 1`] = `
+exports[`CalcButton renders correctly 1`] = `
+<div
+  className="calculator"
+>
+  <span
+    className="input"
+  >
+    0
+  </span>
+  <div
+    className="buttons-container"
+  >
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      AC
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      +/-
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      %
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button action-btn"
+      onClick={[Function]}
+    >
+      ÷
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      7
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      8
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      9
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button action-btn"
+      onClick={[Function]}
+    >
+      x
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      4
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      5
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      6
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button action-btn"
+      onClick={[Function]}
+    >
+      -
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      1
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      2
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      3
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button action-btn"
+      onClick={[Function]}
+    >
+      +
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button double-btn"
+      onClick={[Function]}
+    >
+      0
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button "
+      onClick={[Function]}
+    >
+      .
+    </span>
+    <span
+      aria-hidden={true}
+      className="calc-button action-btn"
+      onClick={[Function]}
+    >
+      =
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Calculator renders correctly 1`] = `
+<span
+  aria-hidden={true}
+  className="calc-button "
+  onClick={[Function]}
+/>
+`;
+
+exports[`nav renders correctly 1`] = `
 <header
   className="navbar"
 >

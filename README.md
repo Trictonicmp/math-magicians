@@ -37,7 +37,8 @@ To get a local copy up and running follow these simple example steps.
 ### Build
 Run ```npm run build```
 
-
+### Tests
+Run ```npm test```
 
 ## Authors
 

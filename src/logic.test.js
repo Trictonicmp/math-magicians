@@ -51,6 +51,6 @@ describe('calculate() tests', () => {
   let calculatorResult = { total: '7', next: '5', operation: '+' };
   calculatorResult = calculate(calculatorResult, '=');
   test('expect calculatorResult to match object { total: "12", next: null, operation: null }', () => {
-    expect(calculatorResult).toMatchObject({ total: "12", next: null, operation: null });
+    expect(calculatorResult).toMatchObject({ total: '12', next: null, operation: null });
   });
 });

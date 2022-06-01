@@ -23,6 +23,39 @@ body {
   justify-content: space-between;
 }
 
+.navbar span {
+  position: relative;
+  z-index: 1;
+  color: white;
+  background-color: black;
+  font-size: 1.2em;
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  margin-right: -1.6em;
+  transition: margin-right 0.2s ease-out;
+}
+
+.quote span {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 0.7em;
+  color: #666;
+  margin-top: 0.3em;
+}
+
+.quote span::before,
+.quote span::after {
+  content: "-";
+}
+
+.homepage h1 span {
+  padding: 0.1em 0.3em;
+  border-radius: 0.2em;
+  color: white;
+  background-color: black;
+}
+
 .navbar:hover a span {
   margin-right: 0;
 }
@@ -35,18 +68,6 @@ body {
   font-size: 1.2em;
   color: black;
   font-style: italic;
-}
-
-.navbar span {
-  position: relative;
-  z-index: 1;
-  color: white;
-  background-color: black;
-  font-size: 1.2em;
-  padding: 0.1em 0.3em;
-  border-radius: 0.2em;
-  margin-right: -1.6em;
-  transition: margin-right 0.2s ease-out;
 }
 
 .navbar ul {
@@ -76,11 +97,13 @@ body {
   font-size: 2em;
 }
 
-.homepage h1 span {
-  padding: 0.1em 0.3em;
+.quote p {
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em;
   border-radius: 0.2em;
-  color: white;
-  background-color: black;
+  color: #666;
+  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.03);
 }
 
 .homepage div p {
@@ -100,10 +123,6 @@ body {
   text-align: right;
   font-size: 2.3em;
   max-width: 10em;
-}
-
-.maths-section .calculator {
-  flex-shrink: 1;
 }
 
 .calculator {
@@ -169,6 +188,10 @@ body {
   grid-column: span 2;
 }
 
+.maths-section .calculator {
+  flex-shrink: 1;
+}
+
 .quote {
   width: calc(100% - 2em);
   margin-top: 5em;
@@ -176,29 +199,6 @@ body {
   max-width: 35em;
 }
 
-.quote p {
-  font-style: italic;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 2em;
-  border-radius: 0.2em;
-  color: #666;
-  box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.03);
-}
-
 .quote p:hover {
   outline: 2px solid #ccc;
-}
-
-.quote span {
-  display: block;
-  width: 100%;
-  text-align: right;
-  font-size: 0.7em;
-  color: #666;
-  margin-top: 0.3em;
-}
-
-.quote span::before,
-.quote span::after {
-  content: "-";
 }

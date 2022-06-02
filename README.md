@@ -4,6 +4,9 @@
 
 > Math Magicians is a website for all fans of mathematics that allows users to make simple calculations and read a random math related quote.
 
+## Screenshots
+![mockup responsivo copia](https://user-images.githubusercontent.com/11634112/171739521-c12aff98-2389-4578-9253-db5ba66368b3.png)
+
 
 ## Built With
 
@@ -12,7 +15,8 @@
 - Technologies: Linters, Git, GitHub. 
 
 ## Live Demo (if available)
-### soon
+### [Heroku](https://vast-lowlands-50456.herokuapp.com/)
+### [Netlify](https://math-magic-aepm.netlify.app/)
 
 
 ## Getting Started
